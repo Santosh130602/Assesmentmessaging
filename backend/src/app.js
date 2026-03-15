@@ -21,7 +21,7 @@ const app = express();
 app.use(helmet());
 
 // CORS
-const allowedOrigins = (process.env.ALLOWED_ORIGINS || 'http://localhost:3000')
+const allowedOrigins = (process.env.ALLOWED_ORIGINS || 'http://localhost:3000' || 'https://assesmentmessaging.vercel.app')
   .split(',')
   .map((o) => o.trim());
 
